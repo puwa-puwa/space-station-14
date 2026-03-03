@@ -115,3 +115,11 @@
   parent: HamtrCentralElectronics
   id: HamtrPeripheralsElectronics
   result: HamtrPeripheralsElectronics
+
+# Security
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseCircuitryRecipeCategory ]
+  id: SecureDoorElectronics
+  result: SecureDoorElectronics
+  completetime: 12

@@ -131,7 +131,7 @@
     containers:
       board: [ DoorElectronicsCommand ]
   - type: Wires
-    layoutId: AirlockCommand
+    layoutId: AirlockSecure
 
 - type: entity
   parent: AirlockExternalGlass
@@ -142,7 +142,7 @@
     containers:
       board: [ DoorElectronicsCommand ]
   - type: Wires
-    layoutId: AirlockCommand
+    layoutId: AirlockSecure
 
 - type: entity
   parent: AirlockExternal

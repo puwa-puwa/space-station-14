@@ -1,5 +1,5 @@
 - type: entity
-  id: HighSecDoor
+  id: BaseHighSecDoor
   parent: BaseStructure
   name: high security door
   description: Keeps the bad out and keeps the good in.
@@ -61,7 +61,7 @@
         - WallLayer
   - type: ContainerFill
     containers:
-      board: [ DoorElectronics ]
+      board: [ SecureDoorElectronics ]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -99,8 +99,6 @@
     enabled: false
     usesApcPower: true
   - type: WiresPanel
-  - type: WiresPanelSecurity
-    securityLevel: maxSecurity
   - type: Wires
     boardName: wires-board-name-highsec
     layoutId: HighSec
@@ -133,3 +131,11 @@
       # This tag is used to nagivate the Airlock construction graph. It's needed because this construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
       - DoorRemoteWhitelist
       # This tag is used by door remotes to allow or not a door remote to normally be able to interact with a door
+
+
+- type: entity
+  id: HighSecDoor
+  parent: BaseHighSecDoor
+  components:
+  - type: WiresPanelSecurity
+    securityLevel: maxSecurity

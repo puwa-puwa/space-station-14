@@ -94,6 +94,17 @@
 
 - type: entity
   parent: Airlock
+  id: AirlockSecure
+  suffix: Secure
+  components:
+  - type: Wires
+    layoutId: AirlockSecure
+  - type: ContainerFill
+    containers:
+      board: [ SecureDoorElectronics ]
+
+- type: entity
+  parent: AirlockSecure
   id: AirlockCommand
   suffix: Command
   components:
@@ -101,8 +112,6 @@
     sprite: Structures/Doors/Airlocks/Standard/command.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
-  - type: Wires
-    layoutId: AirlockCommand
 
 - type: entity
   parent: Airlock
@@ -292,7 +301,7 @@
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
-    layoutId: AirlockCommand
+    layoutId: AirlockSecure
 
 - type: entity
   parent: AirlockGlass

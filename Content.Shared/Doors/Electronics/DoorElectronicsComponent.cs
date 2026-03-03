@@ -9,7 +9,12 @@ namespace Content.Shared.Doors.Electronics;
 /// Allows an entity's AccessReader to be configured via UI.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed partial class DoorElectronicsComponent : Component
+public partial class DoorElectronicsComponent : Component
+{
+}
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class SecureDoorElectronicsComponent : DoorElectronicsComponent
 {
 }
 

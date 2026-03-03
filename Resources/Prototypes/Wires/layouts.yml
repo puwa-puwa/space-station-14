@@ -37,7 +37,7 @@
 
 - type: wireLayout
   parent: HighSec
-  id: AirlockCommand
+  id: AirlockSecure
 
 - type: wireLayout
   parent: Airlock

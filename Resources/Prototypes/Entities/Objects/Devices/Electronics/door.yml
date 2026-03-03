@@ -1,16 +1,10 @@
 - type: entity
-  id: DoorElectronics
+  id: BaseDoorElectronics
   parent: BaseElectronics
-  name: door electronics
-  description: An electronics board used in doors and airlocks.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: door_electronics
     - type: Tag
       tags:
         - DoorElectronics
-    - type: DoorElectronics
     - type: AccessReader
     - type: ActivatableUI
       key: enum.DoorElectronicsConfigurationUiKey.Key
@@ -21,3 +15,27 @@
       interfaces:
         enum.DoorElectronicsConfigurationUiKey.Key:
           type: DoorElectronicsBoundUserInterface
+
+
+
+- type: entity
+  id: DoorElectronics
+  parent: BaseDoorElectronics
+  name: door electronics
+  description: An electronics board used in doors and airlocks.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: door_electronics
+    - type: DoorElectronics
+
+- type: entity
+  id: SecureDoorElectronics
+  parent: BaseDoorElectronics
+  name: secure door electronics
+  description: An electronics board used in secure doors and airlocks.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: security
+    - type: SecureDoorElectronics

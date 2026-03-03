@@ -277,7 +277,7 @@
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
-    layoutId: AirlockCommand
+    layoutId: AirlockSecure
 
 - type: entity
   parent: WindoorSecure
@@ -290,7 +290,7 @@
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
-    layoutId: AirlockCommand
+    layoutId: AirlockSecure
 
 - type: entity
   parent: WindoorSecurePlasma
@@ -303,7 +303,7 @@
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
-    layoutId: AirlockCommand
+    layoutId: AirlockSecure
 
 - type: entity
   parent: WindoorSecureSecurityLocked

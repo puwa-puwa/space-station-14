@@ -62,7 +62,7 @@
         name: construction-graph-component-secure-door-electronics-circuit-board
         icon:
           sprite: "Objects/Misc/module.rsi"
-          state: "door_electronics"
+          state: "security"
         doAfter: 3
     - to: assembly
       completed:
@@ -300,6 +300,7 @@
 ## High security door
   - node: highSecDoor
     entity: BaseHighSecDoor
+    doNotReplaceInheritingEntities: true
     actions:
     - !type:SetWiresPanelSecurity
       wiresAccessible: true

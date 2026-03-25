@@ -965,6 +965,32 @@
     - !type:TileNotBlocked
 
 - type: construction
+  id: AirlockSecure
+  name: construction-recipe-airlock-secure
+  graph: Airlock
+  startNode: start
+  targetNode: secureAirlock
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: HighSecDoor
+  name: construction-recipe-airlock-highsec
+  graph: Airlock
+  startNode: start
+  targetNode: highSecDoor
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
   id: PinionAirlock
   name: construction-recipe-pinion-airlock
   graph: PinionAirlock

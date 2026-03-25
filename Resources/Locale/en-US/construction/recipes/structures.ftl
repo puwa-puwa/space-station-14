@@ -25,3 +25,5 @@ construction-recipe-pinion-airlock-glass = glass clockwork airlock
 construction-recipe-airlock-glass-shuttle = glass shuttle airlock
 construction-recipe-plastic-flaps-clear = plastic flaps (clear)
 construction-recipe-plastic-flaps-opaque = plastic flaps (opaque)
+construction-recipe-airlock-secure = secure airlock
+construction-recipe-airlock-highsec = high security door

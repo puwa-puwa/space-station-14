@@ -1,4 +1,5 @@
 - type: entity
+  suffix: Base
   id: BaseHighSecDoor
   parent: BaseStructure
   name: high security door
@@ -125,6 +126,8 @@
   - type: Construction
     graph: Airlock
     node: highSecDoor
+    containers:
+    - board
   - type: Tag
     tags:
       - HighSecDoor
@@ -135,6 +138,7 @@
 
 - type: entity
   id: HighSecDoor
+  suffix: Locked
   parent: BaseHighSecDoor
   components:
   - type: WiresPanelSecurity

@@ -3,6 +3,7 @@
 - type: latheRecipePack
   id: SecurityEquipmentStatic
   recipes:
+  - SecureDoorElectronics
   - ClothingEyesHudSecurity
   - ForensicPad
   - Handcuffs

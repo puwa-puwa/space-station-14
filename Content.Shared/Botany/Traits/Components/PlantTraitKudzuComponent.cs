@@ -17,6 +17,9 @@ public sealed partial class PlantTraitKudzuComponent : PlantTraitsComponent
     [DataField, AutoNetworkedField]
     public EntProtoId KudzuPrototype = "WeakKudzu";
 
+    [DataField, AutoNetworkedField]
+    public EntProtoId FleshKudzuPrototype = "WeakFleshKudzu";
+
     /// <summary>
     /// Weed level threshold at which the plant is considered overgrown and will transform into kudzu.
     /// </summary>

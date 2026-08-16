@@ -85,6 +85,7 @@
     name: seeds-meatwheat-name
     packetPrototype: MeatwheatSeeds
     productPrototypes: [ MeatwheatBushel ]
+  - type: FleshKudzuTag
   - type: Plant
     lifespan: 25
     maturation: 6
